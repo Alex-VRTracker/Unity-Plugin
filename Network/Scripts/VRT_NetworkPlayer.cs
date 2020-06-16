@@ -29,11 +29,12 @@ namespace VRTracker.Network {
 #else
             VRT_PlayerInstance localPlayer = this.gameObject.GetComponent<VRT_PlayerInstance>();
 #endif
-            networkManager.AddPlayer(localPlayer);
-
-            if (this.gameObject.GetComponent<NetworkIdentity> ().isLocalPlayer) {
+            if (this.gameObject.GetComponent<NetworkIdentity>().isLocalPlayer)
+            {
                 networkManager.SetLocalPlayer(localPlayer);
-			}
+            }
+
+            networkManager.AddPlayer(localPlayer);
 				
         }
 
