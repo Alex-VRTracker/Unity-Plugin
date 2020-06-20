@@ -16,7 +16,7 @@ namespace VRTracker.Network {
 	/// </summary>
 	[RequireComponent(typeof(VRTracker.Network.VRT_NetworkManager))]
 	public class VRT_NetworkDiscovery : NetworkDiscovery
-	{
+	{ 
 		private float timeout = 5f;
         private bool broadcasting = false;
 		private Dictionary<string, float> lanAddresses = new Dictionary<string, float>();
